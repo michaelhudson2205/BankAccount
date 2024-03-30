@@ -1,8 +1,8 @@
 package accounts;
 
-public class Account {
+public abstract Account {
     protected double balance;
-    private double interestRate;
+    protected double interestRate;
 
     public Account(double balance, double interestRate) {
         this.balance = balance;

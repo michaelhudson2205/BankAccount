@@ -11,4 +11,9 @@ public class SavingsAccount extends Account {
         amount += fee;
        return super.withdraw(amount);
     }
+
+    @Override
+    public void status() {
+        System.out.printf("Savings Account [Balance %.2f | Interest rate: %.3f]\n", balance, interestRate);
+    }
 }
